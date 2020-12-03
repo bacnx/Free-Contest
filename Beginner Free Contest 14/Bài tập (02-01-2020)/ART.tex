@@ -1,0 +1,68 @@
+\documentclass[12pt,a4paper,oneside]{article}
+
+\usepackage[utf8]{vietnam}
+\usepackage[english]{babel}
+\usepackage{freecontest}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+\header{\LARGE Beginner Free Contest 14}
+
+\begin{document}
+
+\problemtitle{ART}
+
+\renewcommand{\baselinestretch}{1.25}
+\setlength{\parskip}{1em}
+
+Cho một dãy $A$ gồm $N$ ô và $N$ màu được đánh số từ 1 đến $N$. Ô thứ $i$ được tô màu $A_i$ ($1 \leq A_i \leq N$). Trò chơi như sau, người chơi được cung cấp một mảng $S$ độ dài $N$, ban đầu $S_i$ = 0. Mỗi lượt chơi, người chơi chọn một tập gồm các đoạn [$L_i, R_i$] ($1 \leq L_i \leq R_i \leq N$) trong $S$ không giao nhau và tô màu lên chúng sao cho không có hai đoạn nào cùng màu. 
+
+Biết rằng, nếu một màu đã được dùng thì các lượt tiếp theo người chơi không được chọn màu đó nữa. Hỏi cần ít nhất bao nhiêu lượt chơi để người chơi biến đổi dãy $S$ thành $A$.
+
+\renewcommand{\baselinestretch}{1.0}
+\setlength{\parskip}{0.25em}
+
+\heading{Dữ liệu}
+
+\begin{itemize}
+    \item Dòng đầu tiên, gồm một số nguyên $N$.
+    \item Dòng tiếp theo gồm $N$ số nguyên $A_i$ - màu được tô ở ô thứ $i$.
+\end{itemize}
+
+\heading{Giới hạn}
+\begin{itemize}
+    \item $1 \leq N \leq 100000$.
+    \item $1 \leq A_i \leq N$.
+\end{itemize}
+
+\heading{Kết quả}
+
+\begin{itemize}
+\item Gồm một dòng duy nhất là kết quả bài toán.
+\end{itemize}
+
+\heading{Ví dụ}
+
+\begin{example}
+  \exmp{%
+7
+0
+1
+4
+5
+1
+3
+3
+  }{%
+2
+  }%
+\end{example}
+
+\heading{Giải thích ví dụ}
+Ở ví dụ trên, lượt 1, người chơi tô màu 1 trên [2;5], màu 3 trên [6;7]. Lượt 2, người chơi tô màu 4 trên [3; 3], màu 5 trên [4; 4].
+
+
+
+\end{document}

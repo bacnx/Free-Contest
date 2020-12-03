@@ -1,0 +1,52 @@
+\documentclass[12pt,a4paper,oneside]{article}
+\usepackage{hyperref}
+\usepackage[utf8]{vietnam}
+\usepackage[english]{babel}
+\usepackage{freecontest}
+\usepackage{verbatim}
+
+\header{\LARGE Free Contest 188}
+
+\begin{document}
+\problemtitle{CAVERAGE}
+
+\renewcommand{\baselinestretch}{1.25}
+\setlength{\parskip}{0.5em}
+
+
+Tony có $n$ lá bài, trong đó, trên mỗi lá bài có ghi một số nguyên dương $x_i$. Anh ấy muốn chọn một số lá bài trong $n$ lá bài đó, sao cho trung bình cộng của các số được ghi trên những lá bài đó đúng bằng $A$. Tony thắc mắc rằng anh ấy có bao nhiêu cách khác nhau để chọn những lá bài đó. Bạn hãy tính giúp Tony nhé. 
+
+\renewcommand{\baselinestretch}{1.0}
+\setlength{\parskip}{0.25em}
+
+\heading{Dữ liệu}
+
+\begin{itemize}
+    \item Dòng đầu tiên chứa hai số nguyên dương $n, A$ $(1 \le  n \le 50, 1 \le A \le 50)$.
+    \item Dòng tiếp theo chứa $n$ số nguyên dương $x_i$ biểu diễn những số được viết trên lá bài ($1 \le x_i \le 50$).
+\end{itemize}
+
+\heading{Kết quả}
+
+\begin{itemize}
+    \item Ghi ra một số nguyên duy nhất là số lượng cách chọn các lá bài sao cho trung bình cộng của những số được ghi trên nó đúng bằng $A$.
+\end{itemize}
+
+\heading{Ví dụ}
+
+\begin{example}
+        \exmp{%
+3 2
+1 2 3
+        }{%
+3
+        }%
+        \end{example}
+    
+
+\heading{Chấm điểm}
+\begin{itemize}
+    \item $30\%$ số test ứng với $30\%$ số điểm có $1 \le n \le 16$.
+    \item $70\%$ số test còn lại không có giới hạn gì thêm.
+\end{itemize}
+\end{document}
